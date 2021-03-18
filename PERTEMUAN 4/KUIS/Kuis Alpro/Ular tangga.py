@@ -1,16 +1,21 @@
 
-
+#Input posisi Awal
 posisiAwal, dadu = input().split()
 
-
+#ubah ke Integer
 posisiAwal = int(posisiAwal)
 dadu = int(dadu)
 
+#tentukan posisi setelah melempar dadu
 posisiAkhir = posisiAwal + dadu
 
+#cek apakah posisi akhir berada pada posisi tertentu
+
 if posisiAkhir >= 100 or posisiAkhir == 80:
-    status = "MENANG"
+    status = "MENANG" #Bila terpenuhi maka statusnya adalah MENANG
+
 else:
+
     if posisiAkhir == 3:  # Kondisi Naik
         posisiAkhir = 21
     elif posisiAkhir == 8:
@@ -23,8 +28,6 @@ else:
         posisiAkhir = 86
     elif posisiAkhir == 90:
         posisiAkhir = 91
-
-
 
     elif posisiAkhir == 97:  # Kondisi Turun
         posisiAkhir = 79
@@ -41,9 +44,9 @@ else:
     elif posisiAkhir == 17:
         posisiAkhir = 15
 
+    #Tentukan value status dengan posisi akhir
     status = posisiAkhir
 
+#Luaran status di posisi akhir
 print(status)
-
-
 

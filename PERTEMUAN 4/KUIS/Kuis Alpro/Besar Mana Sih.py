@@ -9,14 +9,15 @@ c=float(c)
 d=float(d)
 
 nakBagong=float(a/b)
-pakdeSemar=float(c/d)
+pakdheSemar=float(c/d)
 
-if nakBagong > pakdeSemar:
-    print(">")
-elif nakBagong < pakdeSemar:
-    print("<")
-else:
+if nakBagong == pakdheSemar:
     print("=")
+else:
+    if nakBagong > pakdheSemar:
+        print(">")
+    else:
+        print("<")
 
 # CONTOH MASUKAN 1
 # 8 15 9 20
